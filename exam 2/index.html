@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Guide</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg border bg-transparent position-absolute top-0 z-3 w-100 p-3"
+    >
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><h1>TRAVEL<sub class="h4">Guide</sub></h1></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">packeges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Transport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="top-container">
+      <div class="position-relative">
+        <img
+          class="img-fluid"
+          src="../Images/landing_image_couple_scenery.jpg"
+          alt=""
+        />
+      </div>
+      <div class="position-absolute top-50 top-0-md heading-container">
+        <h1 class="display-1">Travel</h1>
+        <h2 class="display-3">Far enough</h2>
+        <h1 class="display-2">You Meet</h1>
+        <h2 class="display-3">Yourself</h2>
+      </div>
+      <button class="position-absolute top-50 start-50" id="explore">
+        E X P L O R E
+      </button>
+    </div> -->
+    <div class="card text-bg-dark">
+      <img
+        src="../Images/landing_image_couple_scenery.jpg"
+        class="card-img"
+        alt="..."
+      />
+      <div class="card-img-overlay">
+        <h5 class="card-title p-5 m-5"></h5>
+        <p class="card-text display-2 p-5 m-5">
+          TraveL <br />Far enough <br />You Meet <br />Yourself !
+        </p>
+        <button
+          class="position-absolute top-50 start-50"
+          data-toggle="modal"
+          data-target="modal"
+          id="explore"
+        >
+          E X P L O R E
+        </button>
+        <label for="modal">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <!-- <h5>modal text</h5> -->
+          </div>
+        </label>
+        <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+      </div>
+    </div>
+    <div class="text-center pt-4">
+      <h1 id="hm_heading ">HONEY MOON PACKAGES</h1>
+    </div>
+    <div class="card-container d-flex justify-content-evenly mt-4">
+      <div class="card" style="width: 18rem">
+        <img
+          class="box-image container-fluid pt-4 border"
+          class="card-img-top"
+          src="../Images/kerala.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Kerala Honeymoon Pakages</h3>
+          <h4 class="text-success-emphasis">5 nights/4 days</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eveniet et ducimus, error sint sit, quisquam, ha
+          </p>
+          <a href="#" class="btn btn-primary">Book now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          class="box-image container-fluid pt-4 border"
+          class="card-img-top"
+          src="../Images/goa.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Goa Honeymoon Pakages</h3>
+          <h4 class="text-success-emphasis">5 nights/4 days</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eveniet et ducimus, error sint sit, quis
+          </p>
+          <a href="#" class="btn btn-primary">Book now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          class="box-image container-fluid pt-4 border"
+          class="card-img-top"
+          src="../Images/mali.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Malidives Honeymoon Pakages</h4>
+          <h5 class="text-success-emphasis">5 nights/4 days</h5>
+          <p class="card-text">
+            Some quick example text to card title and make up the bulk of the
+            card's content.ipsum dolor sit, amet contur ut laudantium debitis?
+            wow Lorem ipsum dolor sit amet consectetur that's going to be a
+            great trip!
+          </p>
+          <a href="#" class="btn btn-primary">Book now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          class="box-image container-fluid pt-4 border"
+          class="card-img-top"
+          src="../Images/manali.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Manali Honeymoon Pakages</h3>
+          <h4 class="text-success-emphasis">3 nights/4 days</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eveniet et ducimus, error sint sit, quisquam,
+          </p>
+          <a href="#" class="btn btn-primary">Book now</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button type="button" class="btn btn-primary rounded-pill mt-4">
+        More packeges
+      </button>
+    </div>
+    <!-- End of cards -->
+    <!-- start of carousal -->
+    <div class="text-center">
+      <h1 class="display-2">Experience Dubai !</h1>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide m-5">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="img-fluid"
+            src="../Images/carosal -2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Dessert, All Yours</h2>
+            <p>Conservative Dessert of Al Maha</p>
+            <p>
+              <button type="button" class="btn btn-outline-light">
+                Details
+              </button>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="img-fluid"
+            src="../Images/crosal-3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Ultra Luxury Rooftops</h2>
+            <!-- button here -->
+            <p>Stay right amid the city</p>
+            <button type="button" class="btn btn-outline-light">Details</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="img-fluid"
+            src="../Images/carosal -1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Palm of Jebel Ali</h2>
+            <p>Skydive through city</p>
+            <button type="button" class="btn btn-outline-light">Details</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- end of carousel -->
+    <div class="p-5">
+      <div class="row">
+        <div class="col-6">
+          <iframe
+            height="100%"
+            width="100%"
+            src="https://www.youtube.com/embed/VE75g0frvr4?si=4gLUhShE9dJYFqrc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid" src="../Images/image_near_video.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end of video and image -->
+    <div class="text-center"><h2 class="display-2">Travel World Wide</h2></div>
+    <div class="row p-5 ms-2 me-4 images">
+      <div class="col-2 border border-success image-container rounded p-3">
+        <img
+          class="img-fluid rounded"
+          src="../Images/ivana-cajina-e6f8IaRQY7M-unsplash.jpg "
+          alt=""
+        />
+        <div class="overlay"><h5>Starting from Rs 15000</h5></div>
+      </div>
+      <div class="col-2 border border-success image-container rounded p-3">
+        <img
+          class="img-fluid rounded"
+          src="../Images/fahrul-azmi-9OU7c_Spzw8-unsplash (1).jpg "
+          alt=""
+        />
+        <div class="overlay"><h5>Starting from Rs 25000</h5></div>
+      </div>
+      <div class="col-2 border border-success image-container rounded p-3">
+        <img
+          class="img-fluid rounded"
+          src="../Images/alexey-artyukh-DLf3uwkRNPA-unsplash.jpg "
+          alt=""
+        />
+        <div class="overlay"><h5>Starting from Rs 18000</h5></div>
+      </div>
+      <div class="col-2 border border-success image-container rounded p-3">
+        <img
+          class="img-fluid rounded"
+          src="../Images/alexey-artyukh-DLf3uwkRNPA-unsplash.jpg "
+          alt=""
+        />
+        <div class="overlay"><h5>Starting from Rs 12000</h5></div>
+      </div>
+    </div>
+    <div class="text-center">
+      <h2 class="display-5">Premium Services, Premium delivery</h2>
+      <h4>some sample sub heading</h4>
+    </div>
+    <!-- end of hover images -->
+    <!-- <div class="row p-5 ms-2 images">
+      <div class="col-2 border border-success image-container rounded p-3">
+        <img
+          class="img-fluid rounded"
+          src="../Images/ivana-cajina-e6f8IaRQY7M-unsplash.jpg "
+          alt=""
+        />
+      </div>
+      <div class="col-2 border border-success image-container rounded p-3">
+        <img
+          class="img-fluid rounded"
+          src="../Images/fahrul-azmi-9OU7c_Spzw8-unsplash (1).jpg "
+          alt=""
+        />
+      </div>
+      <div class="col-2 border border-success image-container rounded p-3">
+        <img
+          class="img-fluid rounded-circle"
+          src="../Images/alexey-artyukh-DLf3uwkRNPA-unsplash.jpg "
+          alt=""
+        />
+      </div>
+      <div class="col-2 border border-success image-container rounded p-3">
+        <img
+          class="img-fluid rounded-circle"
+          src="../Images/alexey-artyukh-DLf3uwkRNPA-unsplash.jpg "
+          alt=""
+        />
+      </div>
+    </div> -->
+    <div class="cards-container d-flex justify-content-evenly">
+      <div class="card" style="width: 18rem">
+        <img
+          src="../Images/young-cheerful-guy-with-helmet-driving-yellow-scooter.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Bike Rentel</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="../Images/fire pit.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Camp Fire</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+      <div class="card" style="width: 16rem">
+        <img src="../Images/5124556.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">27 x 7 Support</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk.
+          </p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="../Images/26921728_Female guide with group of tourists flat vector illustration.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title mt-4">Tour Guide</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.hmmmmm Lorem ipsum dolor, sit amet conse
+          </p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="container .bg-light-subtle">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      >
+        <div class="col mb-3">
+          <p class="text-body-secondary">© 2024 | Berry Shade</p>
+        </div>
+
+        <div class="col mb-3"></div>
+
+        <div class="col mb-3">
+          <h5>About us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Our company</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Our Management</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Connections</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Our Reports</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Our network</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5>Social Media</h5>
+          <div class="container">
+            <!-- Section: Social media -->
+            <section class="mb-3">
+              <!-- Facebook -->
+              <a
+                class="btn btn-outline-dark btn-floating"
+                href="#!"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <!-- Instagram -->
+              <a
+                class="btn btn-outline-dark btn-floating"
+                href="#!"
+                role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+
+              <!-- Twitter -->
+              <a
+                class="btn btn-outline-dark btn-floating"
+                href="#!"
+                role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+        </div>
+        <div class="col mb-3">
+          <img class="img-fluid" src="../Images/1217791_4873.jpg" alt="" />
+        </div>
+      </footer>
+    </div>
+    <div></div>
+  </body>
+</html>
